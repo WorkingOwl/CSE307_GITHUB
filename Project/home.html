@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ThanhLong's Toy Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale = 1.0">
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&display=swap" rel="stylesheet">
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <span class="navbar-brand">
+                        <img src="./images/BANDAI_logo.png" alt="Logo" class="d-inline-block align-text-middle">
+                        <span>ThanhLong's Toy Store</span>
+                    </span>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" id="active" href="./home.html">Home</a>
+                            <div class="nav-item dropdown">
+                                <a a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">PRODUCT</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">COMPLETE SELECTION MODIFICATION</a>
+                                    <a class="dropdown-item" href="#">DELUXE EDITION</a>
+                                </div>
+                            </div>
+
+                            <a class="nav-link" href="#">NEWS</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="./images/csm lost driver 1.5.jpg" class="d-block w-100" alt="csm-lost-driver-1.5">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./images/sundriver.jpeg" class="d-block w-100" alt="csm-century-king-sun-driver">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./images/f-iojxqayaabv-d_orig.jpg" class="d-block w-100" alt="csm-dark-kivat-belt">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <main>
+        <div id="product-container" class="container">
+            <h1 class="my-4 product-text">PRODUCT LINES</h1>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <a href="#">
+                        <div class="card bg-dark text-white">
+                            <img src="./images/8a03242e-5bf4-45d2-908d-32a43694aa90.__CR0,84,3503,2167_PT0_SX970_V1___.jpg"
+                                class="card-img" alt="csm">
+                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                <h5 class="product-text">COMPLETE SELECTION MODIFICATION</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <a href="#">
+                        <div class="card bg-dark text-white">
+                            <img src="./images/demons driver.jpg" class="card-img" alt="dx">
+                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                <h5 class="product-text">DELUXE EDITION</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="news-container" class="container-fluid">
+            <div class="container">
+                <article>
+                    <h1 class="my-4 bold-text">LASTEST NEWS</h1>
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            <p>Premium Bandai posted the official images and the promo video of the Complete
+                                Selection Modification Dark Kivat Belt from the Kamen Rider Kiva series.
+                                The item comes with Kivat-Bat II, a buckle set, and the following Fuestles, namely: Wake
+                                Up Fuestle (Dark Kiva), Garulu Seal Fuestle, Basshaa Seal Fuestle, Dogga Seal Fuestle,
+                                Doran Fuestle (Dark Kiva), and Buroon Fuestle (Dark Kiva).</p>
+                            <p>This item is used by three different users, namely: King, Otoya Kurenai, and Taiga Nobori
+                                to transform into Kamen Rider Dark Kiva. The included Kivat-Bat II has been redesigned
+                                compared to the DX version when it comes to modeling and painting to make it look like
+                                the one seen in the series. Also included in this item is are sound effect and BGM
+                                buttons on both ears, and a dialogue button and a microphone for voice recognition on
+                                the back.
+                                The built-in voice recognition gimmick recognizes specific words spoken to Kivat-Bat II,
+                                which is on standby for voice recognition, and activates a response corresponding to
+                                that word. In addition, even if you'll say a different word, he can respond with a
+                                different line, giving you this feeling that you are having a conversation with
+                                Kivat-Bat II. Just like the CSM Kivat-Bat III, the item also has an Accelerometer, in
+                                which moving Kivat-Bat II around will activate distinct flight sounds by moving him at
+                                different speeds. Tomokazu Sugita has recorded multiple lines as Kivat-Bat II, so that
+                                you can enjoy the item not only as a transformation device, but as a character.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card bg-dark text-white">
+                                <iframe id="youtube-link"
+                                    src="https://www.youtube.com/embed/S4nXV8ZebyM?si=5pcZYARKJrZg46qi"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">About us</h5>
+                <div class="container-fluid">
+                    <div class="row align-items-start">
+                        <div class="col-sm-6">
+                            <address>
+                                Phạm Thanh Long<br>
+                                Address: 3M38+6F3, Nam Kỳ Khởi Nghĩa, Định Hoà, Thủ Dầu Một, Bình Dương <br>
+                                Phone number: 0372780334
+                            </address>
+                        </div>
+                        <div class="col-sm-6">
+                            <iframe id="map-link"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.8079981748265!2d106.66359397588559!3d11.053017354029343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d1d7df763eaf%3A0xf4323e44f2867057!2sEastern%20International%20University!5e0!3m2!1sen!2s!4v1703085885325!5m2!1sen!2s"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

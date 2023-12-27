@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 991px) {}
+
+html .container {
+    max-width: 1300px;
+}
+
+.navbar-brand img {
+    width: 100px;
+}
+
+.navbar-brand span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 150%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    border-right: 1px solid black;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+#active {
+    color: red;
+}
+
+.navbar-nav .nav-link:last-child {
+    border-right: none;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        border-right: none;
+    }
+
+}
+
+.navbar-nav .nav-link:hover {
+    color: red;
+}
+
+.card-img-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.product-text {
+    font-weight: bold;
+}
+
+.carousel-control-next {
+    width: 500px;
+}
+
+.carousel-control-next-icon {
+    background-color: grey;
+
+}
+
+.carousel-control-prev-icon {
+    background-color: grey;
+}
+
+#news-container {
+    background-color: black;
+    color: white;
+}
+
+#youtube-link {
+    height: 500px;
+}
+
+#map-link {
+    height: 200px;
+    width: 500px;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#back-to-top:hover {
+    background-color: lightgray;
+}
